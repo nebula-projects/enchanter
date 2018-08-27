@@ -18,7 +18,7 @@ To address the above goals, the following design decisions are proposed:
 * Based on state machine language like AWS Step Function, with enhancements such as signal function.
 * A distributed message queue is leveraged for state change notification. A simple message queue interface is designed to support multiple implementation/providers.  It's based on Redis as a default/reference implementation. 
 * HTTP protocol is supported as default. Moreover, other protocols should be supported easily as a plugin/SPI implementation.
-* MySQL for workflow process data persistence.
+* MySQL for workflow process data persistence. ElasticSearch for reporting.
 * Multi-tenant: Tenant specific data separated for fully independent database physically or logically. 
 * Leader election with Redis for simpicity.(Zookeeper is a little overpower).
 * Two different types of monitoring:
@@ -31,6 +31,13 @@ Enchanter Architecture
 
 # Quick Start
 
+## Requirement
+
+* JDK >= 1.8
+* Redis 3.2.12
+* MySQL > 5.7.8
+* Spring >5.0
+* Tomcat > 8.5
  
 # Feature (TODO)
 
