@@ -21,8 +21,8 @@ To address the above goals, the following design decisions are proposed:
 * MySQL for workflow process data persistence.
 * Leader election with Redis for simpicity.(Zookeeper is a little overpower).
 * Two different types of monitoring:
-- Individual Workflow Monitoring(IWM): Check the status of individual workflow and compensate it via some actions such as retries periodically.
-- Basic Monitoring&Analysis(BMA): Collect statistics for all the workflows in the scenario and alert based on the predefined rules. e.g., An alert would be raised if the number of workflow instance in START status exceed XXX.
+ * Individual Workflow Monitoring(IWM): Check the status of individual workflow and compensate it via some actions such as retries periodically.
+ * Basic Monitoring&Analysis(BMA): Collect statistics for all the workflows in the scenario and alert based on the predefined rules. e.g., An alert would be raised if the number of workflow instance in START status exceed XXX.
 
 Enchanter Architecture
 
